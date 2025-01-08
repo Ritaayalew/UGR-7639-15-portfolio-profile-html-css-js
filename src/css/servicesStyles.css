@@ -1,0 +1,204 @@
+.what-i-offer-grid{
+    background-color: black;
+    padding: 20px 12%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(410px,1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.what-i-offer-grid .partitions{
+    padding: 30px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.partitions h2{
+    font-family: "Irish Grover", serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: rgb(180, 180, 180);
+    text-align: center;
+    margin-bottom: 16px;
+}
+.partitions p{
+    color: rgb(184, 184, 184);
+    margin: 6px 8px 26px;
+    text-align: center;
+}
+.partitions h3{
+    color: rgb(197, 197, 197);
+    font-weight: 500;
+    text-align: center;
+    font-size: 18px;
+}
+.detail{
+    padding: 0 20px;
+}
+
+
+.what-i-offer-grid .skill-set{
+    background-color: #4e4306;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    height: 160px;
+    box-shadow: inset 8px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.skill-set h2{
+    font-weight: 600;
+    color: black;
+    font-size: 20px;
+}
+.partitions .skill-icons{
+    display: grid;
+    justify-content: center;
+    padding: 0 18px; 
+    list-style: none;
+    grid-template-columns: repeat(4,60px);
+    gap: 2px;
+}
+.skill-icons li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.skill-icons li .icon{
+    font-size: 22px;
+}
+.skill-icons li h4{
+    margin-top: 6px;
+    color: rgb(236, 236, 236);
+    font-size: 14px;
+    font-weight: 500;
+}
+.skill-icons .fa-html5{
+    color: #F1662A;
+}
+.skill-icons .fa-css3-alt{
+    color: #33A9DC;
+}
+.skill-icons .fa-js{
+    color: #F5DE19;
+}
+.skill-icons .fa-node-js{
+    color: #21A366;
+}
+.skill-icons .fa-react{
+    padding: 2px;
+    color: #21A366;
+    background-color: white;
+    border-radius: 50%;
+}
+.skill-icons .fa-database{
+    color: #bdbfbf;
+}
+.skill-icons .fa-git-alt{
+   color: white;
+}
+
+
+
+
+
+
+.partitions .call-to-action-btn{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 30px;
+    background-color: #110F01;
+    color: #E3C103;
+    border: 1px solid #EFCE16;
+    border-radius: 10px;
+}
+.partitions .call-to-action-btn:hover{
+    background-color: #DEBE0D;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.certeficates{
+    height: 78vh;
+    background-color: #777777;
+}
+.certeficates img{
+    width: 150px;
+    padding: 18px 16px;
+    margin: 20px 0;
+    background-color: #888787;
+    display: block; /* Removes the default gap around images */ 
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.9); /* Adds the shadow */
+}
+.certeficates img:hover{
+    position: relative;
+    transform: translateY(10px) scale(1.6); /* Move up and scale */ 
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+.certeficates h2{
+    font-family: "Irish Grover", serif;
+    font-size: 30px;
+    padding: 48px 0 8px;
+    text-align: center;
+    font-weight: 700;
+}
+.certeficates p{
+    font-family: "Irish Grover", serif;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.scrollable{
+    display: flex;
+    align-items: center;
+    width: 72%;
+    margin: 50px auto;
+}
+.proof-images{
+    padding: 0 16px;
+    display: flex;
+    overflow-x: scroll; 
+}
+.proof-images::-webkit-scrollbar{
+    display: none;
+}
+.scrollable button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.scrollable .fa-solid{
+    font-size: 50px;
+    box-shadow: 3px 5px rgb(0,0,0,0.2);
+}
+
+@media(max-width:1090px){
+    .what-i-offer-grid{
+        padding: 20px 8%;
+        gap: 2px;
+    }
+    .what-i-offer-grid .skill-set{
+        width: 265px;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:980px) and (min-width:700px){
+    .what-i-offer-grid {
+        grid-template-columns: repeat(1,72%);
+        padding-bottom: 60px;
+    }
+    .detail{
+        padding: 0 34px;
+    }
+}
+@media(max-width:700px){
+    .what-i-offer-grid{
+        grid-template-columns: repeat(1,86%);
+    }
+}

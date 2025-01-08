@@ -1,0 +1,105 @@
+body{
+    background-color: black;
+}
+.small-box{
+    background-color: #191918 ; 
+    border: 1px solid #D8BA13;
+    width: 240px;
+    height: 220px;
+    margin: 48px auto 10px;
+    color: rgb(212, 212, 212);
+    padding: 10px;
+    box-shadow: 6px 8px 4px rgb(0,0,0,0.5);
+}
+.small-box h2{
+    text-align: center;
+    margin: 30px 0 12px;
+    font-family: "Irish Grover", serif;
+}
+.small-box p{
+    text-align: center;
+    padding: 0 16px;
+}
+.contact{
+    padding: 36px 25px;
+    width: 410px;
+    height: 370px;
+    background-color: rgb(231, 229, 229);
+    margin: 0 auto 56px;
+}
+.contact h1{
+    font-family: "Irish Grover", serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-method{
+    max-width: 308px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 8px;
+}
+.contact-method p{
+    margin-left:  12px;
+}
+.contact .descrption{
+    text-align: center;
+    margin: 70px 0 20px;
+}
+
+.contact .icons{
+    width: 108px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.icons .fab{
+    font-size: 22px;
+}
+.icons .fa-linkedin{
+    color: #3CA9C1;
+}
+.icons .fa-github{
+    color: black;
+}
+.icons .fa-instagram{
+    color: #AA6B95;
+}
+@media(max-width:550px){
+    main .contact{
+        width: 75%;
+    }
+    main .small-box{
+        width: 214px;
+    }
+}
+@media(min-width:768px){
+    main{
+        width: 700px;
+        margin: 55px auto;
+        display: flex;
+        align-items: center;
+    }
+    main .small-box{
+        margin-bottom: 150px;
+        position: relative;
+        right: -40px;
+        z-index: 3;
+    }
+}
+@media(max-width:1000px) and (min-width:768px){
+    main{
+        padding-right: 40px;
+    }
+    main .small-box{
+        width: 220px;
+        height: 220px;
+        right: -50px;
+    }
+    main .contact{
+        width: 370px;
+        height: 360px;
+        background-color: #AA6B95; 
+    }
+}

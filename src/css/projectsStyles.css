@@ -1,0 +1,99 @@
+main h2{
+    font-family: "Irish Grover", serif;
+    font-size: 26px;
+    text-align: center;
+    margin: 48px 0 32px ;
+}
+.upper{
+    padding:10px 12% 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+    gap: 16px;
+    justify-content: center;
+}
+.upper .project{
+    padding: 16px 20px 32px;
+    box-shadow: 2px 6px 6px rgb(0,0,0,0.2);
+}
+.upper .project:hover{
+    transform: scale(1.07); /* Move up and scale */ 
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    
+}
+.upper .project img{
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+}
+.upper .project h3{
+    text-align: center;
+    font-family: "Irish Grover", serif;
+    margin: 15px 0;
+    font-weight: 600;
+}
+.upper .project p{
+    text-align: center;
+    padding: 0 8%;
+}
+.collaboration{
+    height: 74vh;
+    background-image: linear-gradient(to bottom,black 60%,rgb(37, 37, 37),rgb(50, 50, 50)) ;
+}
+.collaboration h2{
+    font-family: "Irish Grover", serif;
+    font-size: 26px;
+    text-align: center;
+    padding: 50px 0 15px; 
+    color: #b99f0d;
+}
+.collaboration p{
+    color: rgb(194, 194, 194);
+    text-align: center;
+    padding: 0 27%;
+    font-size: 17px;
+}
+
+.call-to-action-btn{
+    margin: 36px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 30px;
+    background-color: #110F01;
+    color: #E3C103;
+    border: 1px solid #EFCE16;
+    border-radius: 10px;
+}
+.call-to-action-btn:hover{
+    background-color: #DEBE0D;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+@media(max-width:1050px){
+    .upper{
+        padding:10px 14% 30px;
+    }
+}
+@media(max-width:770px){
+    .upper .project img{
+        width: 70%;
+    }
+    .upper{
+        padding:10px 18% 30px;
+    }
+    .upper .project{
+        padding: 16px 20px 40px;
+        margin-bottom: 6px;
+    }
+    .upper .project p{
+        padding: 0 15%;
+    }
+    .collaboration p{
+        padding: 0 18%;
+    }
+}

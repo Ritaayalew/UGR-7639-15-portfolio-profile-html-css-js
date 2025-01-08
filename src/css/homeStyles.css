@@ -1,0 +1,96 @@
+
+main h1, main h2{
+    font-family: "inspiration",serif;
+    color: rgb(207, 207, 207);
+    font-weight: 500;
+}
+main img{
+    filter: grayscale(100%);
+    height: 210%;  /* Adjusted to ensure proper cropping*/
+    object-position: center;
+    object-fit: cover;
+}
+.portrait-container{
+    margin: 10px auto 0;
+    padding: 30px 0 0 15px;
+    width: 330px;
+    height:340px;
+    border-radius: 40%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.partitions{
+    padding: 32px 8px;
+}
+.partitions h1{
+    font-size: 64px;
+    margin:0 0 8px 48px; 
+}
+.partitions h2{
+    font-size: 32px;
+    margin-left: 144px;
+}
+.stair-style{          /* ensure a stair- style effect*/
+    display: block;
+    padding-left: 48px;
+}
+.grid-container{
+    background-image: linear-gradient(-45deg, black 78%,  rgb(46, 46, 46), black);
+    padding: 32px 130px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    justify-content: center;
+    gap: 2px;
+}
+
+
+
+.partitions .icons{
+    width: 80px;
+    margin: 64px auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons .fab{
+    font-size: 22px;
+}
+.icons .fa-linkedin{
+    color: #3CA9C1;
+}
+.icons .fa-github{
+    color: #FFFFFF;
+}
+.icons .fa-instagram{
+    color: #AA6B95;
+}
+
+
+.partitions p{
+    margin: 0 40px 30px;
+    color: rgb(174, 174, 174);
+    text-align: center;
+}
+.partitions .call-to-action-btn{
+    margin: 32px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 105px;
+    height: 30px;
+    background-color: #110F01;
+    color: #E3C103;
+    border: 1px solid #EFCE16;
+    border-radius: 10px;
+}
+.partitions .call-to-action-btn:hover{
+    background-color: #DEBE0D;
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+
