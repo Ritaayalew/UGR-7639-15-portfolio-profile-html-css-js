@@ -5,13 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Ayalew - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inspiration&family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/projectsStyles.css"> -->
 </head>
 <body>
     <header>
-        <div>
+        <div class="logo">
             <p>Rita</p>
         </div>
-        <nav>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="services.html">Services</a></li>
+                <li class="nav-link"><a href="projects.html">Projects</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="burger-menu"><i class="fa fa-bars"></i></button>
+        </nav>
+    </header>
+        <div class="sidebar">
+            <div class="logo">
+                <p>Rita</p>
+                <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,13 +41,11 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button><i class="fa fa-bars"></i></button>
-        </nav>
-    </header>
+        </div>
     <main>
-        <section>
-            <h2>My Projects</h2>
-            <div>
+        <h2>My Projects</h2>
+        <section class="upper">
+            <div class="project">
                 <a href="https://ritaayalew.github.io/MyNetflix-clone-2024/">
                     <img src="images/project-1.png" alt="Netflix Clone">
                 </a>
@@ -33,7 +53,7 @@
                 <p>A fully responsive clone of Netflix with a sleek UI and integrated video streaming capabilities.</p>
             </div>
 
-            <div>
+            <div class="project">
                 <a href="https://www.amazon.com/">
                     <img src="images/project-2.png" alt="Amazon Clone">
                 </a>
@@ -41,7 +61,7 @@
                 <p>An e-commerce platform inspired by Amazon, featuring product listings, shopping cart, and checkout functionalities.</p>
             </div>
 
-            <div>
+            <div class="project">
                 <a href="https://www.zomato.com/">
                     <img src="images/project-3.png" alt="Zomato Clone">
                 </a>
@@ -51,10 +71,10 @@
             
         </section>
 
-        <section>
+        <section class="collaboration">
             <h2>Collaborate with Me</h2>
             <p>If you're excited about building innovative web solutions and think we could create something amazing together, let's connect. I'm always open to new projects and collaborations.</p>
-            <button onclick="window.location.href='contact.html'">Get in Touch</button>
+            <button class="call-to-action-btn" onclick="window.location.href='contact.html'">Get in Touch</button>
         </section>
         
     </main>
@@ -67,5 +87,7 @@
         </p> 
         <p>© 2024 Rita Ayalew. All rights reserved.
     </footer>
+
+    <!-- <script src="./javascript/script.js"></script> -->
 </body>
 </html>

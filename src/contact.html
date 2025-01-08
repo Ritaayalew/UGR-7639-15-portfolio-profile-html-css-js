@@ -6,14 +6,35 @@
     <title>Rita Ayalew - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inspiration&family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/contactStyles.css"> -->
+
 </head>
 <body>
-
     <header>
-        <div>
+        <div class="logo">
             <p>Rita</p>
         </div>
-        <nav>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="services.html">Services</a></li>
+                <li class="nav-link"><a href="projects.html">Projects</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="burger-menu"><i class="fa fa-bars"></i></button>
+        </nav>
+    </header>
+        <div class="sidebar">
+            <div class="logo">
+                <p>Rita</p>
+                <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -21,33 +42,32 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button><i class="fa fa-bars"></i></button>
-        </nav>
-    </header>
+        </div>
 
     <main>
-        <section>
+        <section class="small-box">
             <h2>Reach out to me</h2>
             <p>I'm open to hearing about your ideas and what you are seeking for your website. Send me an email, call me, or write to me on my social networks and I'll make sure I get back to you. </p>
         </section>
 
-        <section>
+        <section class="contact">
             <h1>Contact</h1>
-            <div>
+            <div></div>
+            <div class="contact-method">
                 <i class="fa-solid fa-phone"></i>
                 <p><b>Phone number</b>: +251-909889844</p>
             </div>
-            <div>
+            <div class="contact-method">
                 <i class="fa-solid fa-envelope"></i>
                 <p><b>Email</b>: ritaayalew6@gmail.com</p>
             </div>
-            <div>
+            <div class="contact-method">
                 <i class="fa-solid fa-location-dot"></i>
                 <p><b>Address</b>: Arat killo, Addis Ababa, Ethiopia</p>
             </div>
-            <p> You can also find me on the platforms below.</p>
+            <p class="descrption"> You can also find me on the platforms below.</p>
 
-            <div>
+            <div class="icons">
                 <a href="https://www.linkedin.com/in/rita-ayalew-354802308/" aria-label="Linkedin">
                     <i class="fab fa-linkedin" aria-hidden="true"></i>
                 </a>
@@ -73,5 +93,7 @@
         </p> 
         <p>© 2024 Rita Ayalew. All rights reserved.
     </footer>
+
+    <!-- <script src="./javascript/script.js"></script> -->
 </body>
 </html>

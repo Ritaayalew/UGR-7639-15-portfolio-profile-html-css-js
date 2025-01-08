@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Ayalew - Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Inspiration&family=Irish+Grover&display=swap" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/servicesStyles.css"> -->
 </head>
+
 <body>
     <header>
-        <div>
+        <div class="logo">
             <p>Rita</p>
         </div>
-        <nav>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="home.html">Home</a></li>
+                <li class="nav-link"><a href="about.html">About</a></li>
+                <li class="nav-link"><a href="services.html">Services</a></li>
+                <li class="nav-link"><a href="projects.html">Projects</a></li>
+                <li class="nav-link"><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="burger-menu"><i class="fa fa-bars"></i></button>
+        </nav>
+    </header>
+        <div class="sidebar">
+            <div class="logo">
+                <p>Rita</p>
+                <button class="close-button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
             <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,70 +42,77 @@
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <button><i class="fa fa-bars"></i></button>
-        </nav>
-    </header>
+        </div>
+
+
     <main>
-        <section>
-            <h2>What I Offer</h2>
-            <p>I provide a range of web development services including front-end development, back-end development, and full-stack solutions. My goal is to create responsive, user-friendly websites that meet your business needs.</p>
-            <h3>Front-End Development</h3>
-            <p>Creating visually appealing and interactive user interfaces using HTML, CSS, and JavaScript.</p>
-            <h3>Back-End Development</h3>
-            <p><p>Building robust server-side applications and APIs using technologies like Node.js, Express, and databases.</p>
-            <button onclick="window.location.href='contact.html'">Get in Touch</button>
+        <section class="what-i-offer-grid">
+            <section class="partitions">
+                <h2>What I Offer</h2>
+                <p>I provide a range of web development services including front-end development, back-end development, and full-stack solutions. My goal is to create responsive, user-friendly websites that meet your business needs.</p>
+                <h3>Front-End Development</h3>
+                <p class="detail">Creating visually appealing and interactive user interfaces using HTML, CSS, and JavaScript.</p>
+                <h3>Back-End Development</h3>
+                <p>Building robust server-side applications and APIs using technologies like Node.js, Express, and databases.</p>
+                <button class="call-to-action-btn" onclick="window.location.href='contact.html'">Get in Touch</button>
+            </section>
+    
+            <section class="partitions skill-set">
+                <h2>Skill Set</h2>
+                <div>
+                    <ul class="skill-icons">
+                        <li>
+                            <i class="icon fa-brands fa-html5"></i>
+                            <h4>HTML5</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-brands fa-css3-alt"></i>
+                            <h4>CSS3</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-brands fa-js"></i>
+                            <h4>JavaScript</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-brands fa-node-js"></i>
+                            <h4>Node.js</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-brands fa-react"></i>
+                            <h4>React</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-database"></i>
+                            <h4>MySQL</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-brands fa-git-alt"></i>
+                            <h4>Git</h4>
+                        </li>
+                        <li>
+                            <i class="icon fa-solid fa-database"></i>
+                            <h4>MongoDB</h4>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+    
         </section>
-
-        <section>
-            <h2>Skill Set</h2>
-            <div>
-                <ul>
-                    <li>
-                        <i class="fa-brands fa-html5"></i>
-                        <h4>HTML5</h4>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <h4>CSS3</h4>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-js"></i>
-                        <h4>JavaScript</h4>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-node-js"></i>
-                        <h4>Node.js</h4>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-react"></i>
-                        <h4>React</h4>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-database"></i>
-                        <h4>MySQL</h4>
-                    </li>
-                    <li>
-                        <i class="fa-brands fa-git-alt"></i>
-                        <h4>Git</h4>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-database"></i>
-                        <h4>MongoDB</h4>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
+        
+        <section class="certeficates">
             <h2>Certeficates</h2>
             <p>qualifications over the years.</p>
-            <div>
-                <img src="images/certeficate-1.png" alt="certeficate-1">
-                <img src="images/certeficate-2.png" alt="certeficate-2">
-                <img src="images/certeficate-3.png" alt="certeficate-3">
-                <img src="images/certeficate-4.png" alt="certeficate-4">
-                <img src="images/certeficate-5.png" alt="certeficate-5">
-                <img src="images/certeficate-6.png" alt="certeficate-6">
+            <div class="scrollable">
+                <button class="left-btn"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="proof-images"> 
+                    <img src="images/certeficate-1.png" alt="certeficate-1">
+                    <img src="images/certeficate-2.png" alt="certeficate-2">
+                    <img src="images/certeficate-3.png" alt="certeficate-3">
+                    <img src="images/certeficate-4.png" alt="certeficate-4">
+                    <img src="images/certeficate-5.png" alt="certeficate-5">
+                    <img src="images/certeficate-6.png" alt="certeficate-6">
+                </div>
+                <button class="right-btn"><i class="fa-solid fa-angle-right"></i></button>
             </div>
         </section>
     </main>
@@ -96,5 +126,6 @@
         <p>© 2024 Rita Ayalew. All rights reserved.
     </footer>
     
+    <!-- <script src="./javascript/script.js"></script> -->
 </body>
 </html>
