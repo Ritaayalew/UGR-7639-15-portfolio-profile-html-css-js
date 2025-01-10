@@ -53,6 +53,9 @@ header ul li:hover, .sidebar ul li:hover{
     background-color: #4C420A;
     border-bottom: 1px solid white;
 }
+.blur { 
+    filter: blur(8px); 
+}
 .sidebar{
     width: 400px;
     height: 100vh;
@@ -60,7 +63,7 @@ header ul li:hover, .sidebar ul li:hover{
     top: 0;
     right: 0;
     z-index: 999;
-    background-color: #100e0e;
+    background-color: rgb(16, 14, 14);
     display: none;
     flex-direction: column;
     opacity: 0.9;
@@ -104,7 +107,7 @@ header ul li:hover, .sidebar ul li:hover{
     cursor: pointer;
 }
 .close-button .fa-xmark{
-    color: rgb(118, 5, 5);
+    color: rgb(118, 58, 5);
     font-size: 30px;
 }
 @media (max-width:768px) {
